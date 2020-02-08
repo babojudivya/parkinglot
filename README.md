@@ -1,4 +1,4 @@
-# parkinglot
+# ParkingLot
 This application is build using Object Oriented Design Priniciples 
 
 ## How to work with this app ?
