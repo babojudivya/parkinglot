@@ -1,0 +1,192 @@
+{
+	"id": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+	"name": "parking-lot postman requests",
+	"description": "import this json into your notepad and explore parking lot end points \n",
+	"order": [
+		"e97e15cf-a7ee-5b79-d19d-4fb35b5cb526",
+		"4cf068cf-53b0-982c-d50a-48ce1d912cff",
+		"bd8cd4fa-c59b-0b6b-a26f-74a089a361b5",
+		"5e995071-0586-0ed4-3de4-7005c6fa26e5",
+		"f59aa142-658d-df1a-0e15-2706c535744c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1581199793067,
+	"owner": "2085066",
+	"public": false,
+	"requests": [
+		{
+			"id": "4cf068cf-53b0-982c-d50a-48ce1d912cff",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/parkinglot/secure/parking/vehicle/unpark/JBZ1980",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "UnParkMyCar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581199987511,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"regNo\":\"JBZ1980\", \n\"color\":\"black\",\n\"type\":\"small\",\n\"inTime\":\"2020-02-08\",\n\"out_time\":\"2020-02-09\",\n\"spot\":{\n\t\"id\":\"2\",\n\"type\":\"small\",\n\"level\":2,\n\"pos\":1\n}\n\n\n\n}"
+		},
+		{
+			"id": "5e995071-0586-0ed4-3de4-7005c6fa26e5",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/parkinglot/secure/parking/vehicles?color=black",
+			"queryParams": [
+				{
+					"key": "color",
+					"value": "black",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+			"data": [],
+			"dataMode": "params",
+			"name": "Read Parked Vehicles By Color",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581200101440,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "bd8cd4fa-c59b-0b6b-a26f-74a089a361b5",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/parkinglot/secure/parking/vehicle/get/JBZ1950\n",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+			"data": [],
+			"dataMode": "params",
+			"name": "Read By Reg Number",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581200039703,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e97e15cf-a7ee-5b79-d19d-4fb35b5cb526",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/parkinglot/secure/parking/vehicle/park",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "ParkMyCar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581199907798,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"regNo\":\"JBZ1980\", \n\"color\":\"black\",\n\"type\":\"small\",\n\"inTime\":\"2020-02-08\",\n\"out_time\":\"2020-02-09\",\n\"spot\":{\n\t\"id\":\"2\",\n\"type\":\"small\",\n\"level\":2,\n\"pos\":1\n}\n\n\n\n}"
+		},
+		{
+			"id": "f59aa142-658d-df1a-0e15-2706c535744c",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/parkinglot/secure/parking/vehicles?inTime=21-02-2019&outTime=24-02-2019&p=0",
+			"queryParams": [
+				{
+					"key": "inTime",
+					"value": "21-02-2019",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "outTime",
+					"value": "24-02-2019",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "p",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "53ed465b-cb7d-ddcb-390f-3e1cf00d74b8",
+			"data": [],
+			"dataMode": "params",
+			"name": "Read Parked Vehicles By Color",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581200143752,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
